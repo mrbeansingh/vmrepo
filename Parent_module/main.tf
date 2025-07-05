@@ -3,6 +3,13 @@ module "resouregroup" {
   name     = "rg-vm"
   location = "centralindia"
 
+  
+
+}
+module "resouregroup" {
+  source   = "../Child_module/azurerm_resoure_group"
+  name     = "arv-vm"
+  location = "centralindia"
 }
 
 module "resouregroup1" {
