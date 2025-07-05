@@ -4,6 +4,16 @@ module "resouregroup" {
   location = "centralindia"
 
 }
+
+module "resouregroup1" {
+  source   = "../Child_module/azurerm_resoure_group"
+  name     = "rg-vm1"
+  location = "centralindia"
+  
+}
+
+
+
 module "vnet" {
   depends_on          = [module.resouregroup]
   source              = "../Child_module/azurerm_virtual_network"
