@@ -7,7 +7,14 @@ module "resouregroup" {
 
 module "resouregroup1" {
   source   = "../Child_module/azurerm_resoure_group"
-  name     = "rg-vm1"
+  name     = "rg-vm2"
+  location = "centralindia"
+  
+}
+
+module "resouregroup1" {
+  source   = "../Child_module/azurerm_resoure_group"
+  name     = "rg-vm2"
   location = "centralindia"
   
 }
