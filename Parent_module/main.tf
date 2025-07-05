@@ -12,6 +12,13 @@ module "resouregroup1" {
   
 }
 
+module "resouregroup2" {
+  source   = "../Child_module/azurerm_resoure_group"
+  name     = "rg-vm2"
+  location = "centralindia"
+  
+}
+
 
 
 module "vnet" {
